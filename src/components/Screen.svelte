@@ -13,9 +13,11 @@
 
   <div class="screen">
     {#if src}
-      {#key alt}
-      <img {src} {alt} in:fade />
+      {#key src}
+        <img {src} {alt} in:fade={{ delay: 200 }} />
       {/key}
+    {:else}
+      <div />
     {/if}
   </div>
 

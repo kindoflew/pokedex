@@ -11,22 +11,22 @@
   import BaseStats from "./BaseStats.svelte";
 
   let pokemon = {
-    name: '',
-    sprite: '',
+    name: "",
+    sprite: "",
     info: {
-      height: '',
-      weight: '',
+      height: "",
+      weight: "",
     },
-    types: [''],
+    types: [""],
     stats: {
-      HP: '',
-      ATTACK: '',
-      DEFENSE: '',
-      SATTACK: '',
-      SDEFENSE: '',
-      SPEED: '',
+      HP: "",
+      ATTACK: "",
+      DEFENSE: "",
+      SATTACK: "",
+      SDEFENSE: "",
+      SPEED: "",
     },
-    matchups: {}
+    matchups: {},
   };
 
   let blink = false;
@@ -46,27 +46,25 @@
     />
   </div>
   <div class="pokedex">
-    {#if pokemon}
-      <div class="left">
-        <Lights bind:blink />
-        <div class="screen-info">
-          <Screen src={pokemon.sprite} alt={pokemon.name} />
-          <Info types={pokemon.types} info={pokemon.info} />
-        </div>
+    <div class="left">
+      <Lights bind:blink />
+      <div class="screen-info">
+        <Screen src={pokemon.sprite} alt={pokemon.name} />
+        <Info types={pokemon.types} info={pokemon.info} />
       </div>
-      <div class="middle">
-        <div class="line one" />
-        <div class="line two" />
+    </div>
+    <div class="middle">
+      <div class="line one" />
+      <div class="line two" />
+    </div>
+    <div class="right">
+      <EmptySpace />
+      <div class="matchups-stats">
+        <Matchups matchups={pokemon.matchups} />
+        <BaseStats stats={pokemon.stats} />
       </div>
-      <div class="right">
-        <EmptySpace />
-        <div class="matchups-stats">
-          <Matchups matchups={pokemon.matchups} />
-          <BaseStats stats={pokemon.stats} />
-        </div>
-        <Buttons />
-      </div>
-    {/if}
+      <Buttons />
+    </div>
   </div>
 </main>
 
@@ -90,7 +88,7 @@
   }
 
   .pokedex:after {
-    content: '';
+    content: "";
     height: 23rem;
     width: 45rem;
     position: absolute;
@@ -112,7 +110,7 @@
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
   }
-  
+
   .right {
     border-bottom-right-radius: 4px;
   }
@@ -142,7 +140,7 @@
   }
 
   .middle:after {
-    content: '';
+    content: "";
     width: 0.8rem;
     height: 26.5rem;
     background-color: rgba(255, 166, 166, 0.384);

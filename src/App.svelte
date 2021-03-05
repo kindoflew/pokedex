@@ -20,5 +20,4 @@
   ul {
     list-style: none;
   }
-  
 </style>

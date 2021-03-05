@@ -38,7 +38,7 @@
 
   ul {
     width: 9rem;
-    min-height: 2.6rem;
+    min-height: 2.7rem;
     padding: 0.5rem;
     margin: 1rem;
     border: 1px solid black;
@@ -46,6 +46,10 @@
     background-color: #6e8f2c;
     box-shadow: 0 0 5px 2px rgba(52, 68, 21, 0.63) inset;
     font-family: monospace;
+  }
+
+  li {
+    line-height: 1.2;
   }
 
   .round-button {
