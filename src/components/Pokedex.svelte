@@ -70,7 +70,7 @@
 
 <style>
   main {
-    margin: 0 5rem;
+    padding: 0.5rem 2rem;
   }
 
   .select-wrapper {
@@ -82,7 +82,7 @@
     display: flex;
     margin: 1rem auto;
     border-radius: 4px;
-    width: 45rem;
+    width: 46rem;
     height: 30rem;
     position: relative;
   }
@@ -90,7 +90,7 @@
   .pokedex:after {
     content: "";
     height: 23rem;
-    width: 45rem;
+    width: 46rem;
     position: absolute;
     top: 7rem;
     z-index: -1;
@@ -101,7 +101,7 @@
   .left,
   .right {
     background-color: var(--red);
-    width: 35rem;
+    width: 22rem;
     position: relative;
   }
 
@@ -132,7 +132,7 @@
 
   .middle {
     background-color: var(--red);
-    width: 4rem;
+    width: 2.5rem;
     height: 26.5rem;
     align-self: flex-end;
     border: 1px solid #a00000;
