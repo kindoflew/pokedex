@@ -1,6 +1,5 @@
 <script>
   import { searchPokemon } from "../api/fetchData.js";
-  import { data } from "../api/data.js";
   import Select from "svelte-select";
   import Lights from "./Lights.svelte";
   import EmptySpace from "./EmptySpace.svelte";
@@ -9,6 +8,15 @@
   import Info from "./Info.svelte";
   import Matchups from "./Matchups.svelte";
   import BaseStats from "./BaseStats.svelte";
+
+  let pokemonList = fetchList();
+
+  async function fetchList() {
+    let data = await fetch("list.json");
+    let res = await data.json();
+
+    return res;
+  }
 
   let pokemon = {
     name: "",
@@ -39,11 +47,13 @@
 
 <main>
   <div class="select-wrapper">
-    <Select
-      items={data}
-      on:select={handleSelect}
-      placeholder="Enter Pokemon here..."
-    />
+    {#await pokemonList then data}
+      <Select
+        items={data}
+        on:select={handleSelect}
+        placeholder="Enter Pokemon here..."
+      />
+    {/await}
   </div>
   <div class="pokedex">
     <div class="left">
@@ -74,6 +84,7 @@
   }
 
   .select-wrapper {
+    min-height: 3rem;
     width: 20rem;
     margin: 1rem auto 2rem;
   }
