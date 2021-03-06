@@ -10,10 +10,12 @@
     --red: #e40101;
     --gray: #2b2b2b;
     --bg: #e4e4e4;
+    --inputFontSize: 16px;
   }
 
   body {
     background-color: var(--bg);
+    font-family: monospace;
   }
 
   li,
@@ -22,13 +24,12 @@
     text-transform: capitalize;
   }
 
-  ul {
-    list-style: none;
+  .listItem,
+  .selectedItem {
+    font-size: var(--inputFontSize);
   }
 
-  @media (max-width: 800px) {
-    input {
-      font-size: 16px;
-    }
+  ul {
+    list-style: none;
   }
 </style>
