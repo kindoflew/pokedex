@@ -69,11 +69,14 @@
     </div>
     <div class="right">
       <EmptySpace />
+      <div class="rotate-mobile">
       <div class="matchups-stats">
         <Matchups matchups={pokemon.matchups} />
         <BaseStats stats={pokemon.stats} />
       </div>
+    
       <Buttons />
+    </div>
     </div>
   </div>
 </main>
@@ -172,5 +175,61 @@
 
   .two {
     bottom: 2rem;
+  }
+
+  @media (max-width: 800px) {
+    .pokedex {
+      flex-direction: column;
+      height: 63rem;
+      width: 22rem;
+    }
+
+    .pokedex:after {
+      width: 20rem;
+    }
+
+    .middle {
+      width: 22rem;
+      height: 2.5rem;
+    }
+
+    .middle:after {
+      width: 22rem;
+      height: 0.8rem;
+      top: 0.4rem;
+      left: 0;
+    }
+
+    .line {
+      border-top: none;
+      border-left: 1px solid black;
+      height: 2.5rem;
+      width: 1rem;
+      top: 0;
+      bottom: 0;
+    }
+
+    .one {
+      left: 2rem;
+    }
+
+    .two {
+      right: 0.5rem;
+    }
+
+    .left,
+    .right {
+      min-height: 30rem;
+    }
+
+    .rotate-mobile,
+    .right {
+      transform: rotate(180deg);
+    }
+
+    .rotate-mobile {
+      position: relative;
+      bottom: 1rem;
+    }
   }
 </style>

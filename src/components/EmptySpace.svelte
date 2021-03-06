@@ -5,7 +5,7 @@
 
 <style>
   div {
-    width: 100%;
+    width: 22rem;
     height: 4rem;
     position: relative;
   }
