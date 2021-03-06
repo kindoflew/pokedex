@@ -232,4 +232,10 @@
       bottom: 1rem;
     }
   }
+
+  @media (max-width: 450px) {
+    main {
+      padding: 0.5rem 0;
+    }
+  }
 </style>
