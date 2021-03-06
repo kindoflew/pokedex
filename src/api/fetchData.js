@@ -100,15 +100,6 @@ function typeNamesArrayFromObj(obj) {
   return array;
 }
 
-// TODO: not sure if I should fetch the list on page load or just keep it hardcoded how it is.
-// I lose nice name formatting if I fetch
-export async function fetchList() {
-  let response = await fetch(`${BASE_URL}/pokemon`);
-  let data = await response.json();
-
-  return data.results;
-}
-
 // TODO: might eventually add move lists, but it's a lot of work because PokeAPI is organized weird.
 // function formatMoves(data) {
 //   let moves = {
