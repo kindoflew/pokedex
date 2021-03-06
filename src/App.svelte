@@ -9,6 +9,11 @@
     --border-radius: 5px;
     --red: #e40101;
     --gray: #2b2b2b;
+    --bg: #e4e4e4;
+  }
+
+  body {
+    background-color: var(--bg);
   }
 
   li,

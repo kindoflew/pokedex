@@ -12,11 +12,11 @@
 
   .top {
     height: 3.5rem;
-    background-color: white;
+    background-color: var(--bg);
   }
 
   .bottom {
-    background-color: white;
+    background-color: var(--bg);
     height: 3rem;
     clip-path: polygon(33% 0, 100% 0, 100% 100%, 49% 100%);
   }
