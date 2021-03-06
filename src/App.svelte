@@ -16,6 +16,10 @@
     background-color: var(--bg);
   }
 
+  input {
+    font-size: 1rem;
+  }
+
   li,
   .listItem,
   .selectContainer {
