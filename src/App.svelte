@@ -16,10 +16,6 @@
     background-color: var(--bg);
   }
 
-  input {
-    font-size: 1rem;
-  }
-
   li,
   .listItem,
   .selectContainer {
@@ -28,5 +24,11 @@
 
   ul {
     list-style: none;
+  }
+
+  @media (max-width: 800px) {
+    input {
+      font-size: 16px;
+    }
   }
 </style>
