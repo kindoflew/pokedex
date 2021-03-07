@@ -28,10 +28,9 @@
 
 <style>
   .lights {
-    width: 100%;
     height: 6.5rem;
     position: relative;
-    filter: drop-shadow(2px 2px 2px #ad2121);
+    filter: drop-shadow(2px 2px #ad2121);
   }
 
   .top,
