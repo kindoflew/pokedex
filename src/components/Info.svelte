@@ -31,6 +31,7 @@
 <style>
   .container {
     display: flex;
+    width: 19rem;
     margin: 0 auto;
     padding: 0 1rem 1rem;
     justify-content: center;

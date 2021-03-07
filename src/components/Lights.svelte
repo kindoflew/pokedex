@@ -29,23 +29,25 @@
 <style>
   .lights {
     width: 100%;
-    height: 4rem;
+    height: 6.5rem;
     position: relative;
-    filter: drop-shadow(2px 2px 2px rgb(173, 33, 33));
+    filter: drop-shadow(2px 2px 2px #ad2121);
+  }
+
+  .top,
+  .bottom {
+    background-color: var(--red);
   }
 
   .top {
     height: 3.5rem;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background-color: var(--red);
   }
 
   .bottom {
-    background-color: var(--red);
     height: 3rem;
     clip-path: polygon(0 0, 67% 0, 51% 100%, 0% 100%);
-    filter: drop-shadow(0 2px 0 #2b2525);
   }
 
   .circle {

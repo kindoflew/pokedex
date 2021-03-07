@@ -74,7 +74,6 @@
         <Matchups matchups={pokemon.matchups} />
         <BaseStats stats={pokemon.stats} />
       </div>
-    
       <Buttons />
     </div>
     </div>
@@ -96,7 +95,7 @@
     display: flex;
     margin: 1rem auto;
     border-radius: 4px;
-    width: 46rem;
+    width: 46.5rem;
     height: 30rem;
     position: relative;
   }
@@ -104,7 +103,7 @@
   .pokedex:after {
     content: "";
     height: 23rem;
-    width: 46rem;
+    width: 46.5rem;
     position: absolute;
     top: 7rem;
     z-index: -1;
@@ -134,14 +133,13 @@
     flex-direction: column;
     justify-content: center;
     height: 25rem;
-    margin-top: 2rem;
   }
 
   .matchups-stats {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
   }
 
   .middle {

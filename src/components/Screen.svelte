@@ -44,9 +44,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem auto;
+    margin: 0 auto 1rem;
     clip-path: circle(121.1% at 85% 0);
-    filter: drop-shadow(2px 2px 0 #d4d4d4);
+    box-shadow: 2px 1px 0 #d4d4d4;
   }
 
   .screen {
