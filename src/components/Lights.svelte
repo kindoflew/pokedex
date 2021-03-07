@@ -60,6 +60,7 @@
     height: 4rem;
     width: 4rem;
     background-color: #0090e4;
+    will-change: filter;
   }
 
   .circle:after {
@@ -101,6 +102,7 @@
     width: 0.75rem;
     border: 1.5px solid black;
     position: relative;
+    will-change: filter;
   }
 
   .dot:after {
