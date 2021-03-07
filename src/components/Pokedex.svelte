@@ -139,7 +139,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
   }
 
   .middle {
@@ -227,7 +227,7 @@
 
     .rotate-mobile {
       position: relative;
-      bottom: 1rem;
+      bottom: 1.75rem;
     }
   }
 

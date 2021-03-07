@@ -45,9 +45,9 @@
   .small-rects {
     justify-content: space-between;
     width: 6rem;
-    height: 0.5rem;
-    top: 0.8rem;
-    right: 0.8rem;
+    height: 0.4rem;
+    top: 0.6rem;
+    right: 1.2rem;
   }
 
   .small {
@@ -56,15 +56,15 @@
   }
 
   .large-rects {
-    justify-content: space-around;
+    justify-content: space-between;
     height: 2rem;
-    left: 0rem;
-    right: 0;
-    bottom: 1rem;
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.9rem;
   }  
 
   .large {
-    width: 8rem;
+    width: 7.5rem;
     box-shadow: 2px 2px 0 #414141;
   }
 
@@ -75,8 +75,8 @@
     background-color: #c79901;
     border: 1px solid black;
     position: absolute;
-    right: 1rem;
-    top: 2.4rem;
+    right: 1.2rem;
+    top: 1.7rem;
   }
 
   .circle:after {
@@ -92,18 +92,18 @@
 
   .squares {
     width: 5rem;
-    height: 2rem;
+    height: 1.8rem;
     justify-content: center;
-    top: 1.5rem;
-    left: 2rem;
+    top: 1rem;
+    left: 1rem;
     border-radius: 3px;
     filter: drop-shadow(1px 1px 0 #b8b8b8);
   }
 
   .square {
     background-color: white;
-    height: 2rem;
-    width: 2.5rem;
+    height: 1.8rem;
+    width: 2.1rem;
     border: 1.5px solid #474747;
   }
 

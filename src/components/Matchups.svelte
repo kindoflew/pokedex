@@ -45,7 +45,7 @@
   {#if types.length}
   <div class="buttons" in:fade>
     <button on:click={() => active = normal } class:active={active === normal}>Normal</button>
-    <button on:click={() => active = superEffective } class:active={active === superEffective}>Super Effective</button>
+    <button on:click={() => active = superEffective } class:active={active === superEffective}>Weakness</button>
     <button on:click={() => active = resists } class:active={active === resists}>Resists</button>
     <button on:click={() => active = immune } class:active={active === immune}>Immune</button>
   </div>
@@ -71,7 +71,7 @@
     background-color: #3a3a3a;
     color: white;
     width: 19rem;
-    height: 6.5rem;
+    height: 7.5rem;
     display: flex;
     flex-direction: column;
     margin: 0.5rem auto;
@@ -104,6 +104,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0;
+    margin-top: 0.5rem;
   }
 
   li {
