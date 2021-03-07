@@ -93,7 +93,7 @@
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     border-radius: 2px;
-    filter: drop-shadow(2px 2px 0 #414141);
+    box-shadow: 2px 2px 0 #414141;
   }
 
   .dpad:after {
@@ -105,5 +105,18 @@
     top: 1.75rem;
     width: 5rem;
     border-radius: 2px;
+    border-right: 2px solid #414141;
   }
+
+  /* .dpad:before {
+    content: "";
+    height: 1.4rem;
+    position: absolute;
+    top: 1.79rem;
+    right: -1.85rem;
+    width: 1.8rem;
+    border-right: 2px solid #414141;
+    border-bottom: 3px solid #414141;
+    border-radius: 2px;
+  } */
 </style>

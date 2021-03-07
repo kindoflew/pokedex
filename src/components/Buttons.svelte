@@ -52,7 +52,7 @@
 
   .small {
     width: 2.5rem;
-    filter: drop-shadow(1px 1px 0 #414141);
+    box-shadow: 1px 1px 0 #414141;
   }
 
   .large-rects {
@@ -65,7 +65,7 @@
 
   .large {
     width: 8rem;
-    filter: drop-shadow(2px 2px 0 #414141);
+    box-shadow: 2px 2px 0 #414141;
   }
 
   .circle {
