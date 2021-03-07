@@ -16,6 +16,7 @@
   body {
     background-color: var(--bg);
     font-family: monospace;
+    overflow-x: hidden;
   }
 
   li,
